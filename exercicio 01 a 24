@@ -1,0 +1,48 @@
+Parte I - Respostas das Questões Objetivas
+D - Uma função que chama a si mesma, direta ou indiretamente, para resolver uma versão menor do mesmo problema.
+
+C - Resolver diretamente a menor instância do problema, sem novas chamadas recursivas, garantindo que as chamadas parem.
+
+A - Que cada chamada recursiva receba um problema menor, aproximando-se do caso base.
+
+E - 4 3 2 1
+
+A - 1 2 3 4
+
+C - 2 1 1 2
+
+B - 6 chamadas no total
+
+B - 13
+
+B - fatorial(0)
+
+A - Encerra somente aquela chamada; as chamadas anteriores retomam a execução do ponto em que pararam.
+
+D - A recursão não termina, pois n se afasta do caso base, até ocorrer estouro de pilha.
+
+A - A recursão não termina, pois, partindo de um número par, n nunca vale 1.
+
+C - O resultado é calculated, mas descartado: a função termina sem return e o valor devolvido é indefinido.
+
+B - 12
+
+D - CBA
+
+C - 0
+
+A - 9
+
+B - n + 1 chamadas; memória O(n).
+
+D - pot(a, 0) = 1; pot(a, b) = a * pot(a, b - 1), para b > 0.
+
+E - 15
+
+C - O(log n)
+
+E - Todo algoritmo recursivo pode ser reescrito com laços, usando, se necessário, uma pilha explícita.
+
+B - A chamada recursiva é a última operação executada, sem nenhum cálculo pendente após seu retorno.
+
+E - 4
