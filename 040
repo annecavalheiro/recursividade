@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+
+void troca(char *x, char *y) {
+    char temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+void permuta(char s[], int i, int n) {
+    if (i == n - 1) {
+        printf("%s\n", s);
+        return;
+    }
+    for (int j = i; j < n; j++) {
+        troca(&s[i], &s[j]);
+        permuta(s, i + 1, n);
+        troca(&s[i], &s[j]); // desfazer a troca (backtracking)
+    }
+}
+
+int main() {
+    char s[100];
+    scanf("%s", s);
+    int n = strlen(s);
+    permuta(s, 0, n);
+    return 0;
+}
