@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int multiplica(int a, int b) {
+    if (b == 0) {
+        return 0;
+    }
+    return a + multiplica(a, b - 1);
+}
+
+int main() {
+    printf("%d\n", multiplica(4, 3)); // Exibe 12
+    printf("%d\n", multiplica(7, 0)); // Exibe 0
+    return 0;
+}
