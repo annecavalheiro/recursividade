@@ -1,0 +1,15 @@
+#include <stdio.stdio.h>
+
+void regressiva(int n) {
+    if (n < 1) {
+        return;
+    }
+    printf("%d ", n);
+    regressiva(n - 1);
+}
+
+int main() {
+    regressiva(5);
+    printf("\n");
+    return 0;
+}
